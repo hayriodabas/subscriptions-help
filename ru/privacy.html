@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Подписки — Политика конфиденциальности</title>
+<link rel="canonical" href="https://hayriodabas.github.io/subscriptions-help/ru/privacy.html">
+<style>:root {
+  color-scheme: light dark;
+  --paper: #f3f2ee;
+  --card: #ffffff;
+  --inset: #e8e6e0;
+  --rule: #d5d2c9;
+  --ink: #17191d;
+  --ink-muted: #5a5e66;
+  --line-track: #24262b;
+  --accent: #e8562a;
+  --accent-link: #b93a14;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141518;
+    --card: #1d1f24;
+    --inset: #25282f;
+    --rule: #343740;
+    --ink: #f3f2ee;
+    --ink-muted: #a1a5ae;
+    --line-track: #f3f2ee;
+    --accent: #e8562a;
+    --accent-link: #ff7a52;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16.5px/1.64 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.route-header {
+  height: 12px;
+  background: linear-gradient(90deg, var(--line-track) 0 72%, var(--accent) 72% 100%);
+}
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 36px 20px 72px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.hero img {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  border: 1px solid var(--rule);
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent-link);
+}
+h1 {
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 750;
+  margin: 4px 0 4px;
+  letter-spacing: -0.02em;
+}
+.lede {
+  font-size: 17.5px;
+  color: var(--ink-muted);
+  margin: 0 0 22px;
+}
+nav.primary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 16px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+.lang-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 28px;
+}
+.lang-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+  background: var(--card);
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.lang-chip.current {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+a {
+  color: var(--accent-link);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 34px 0 12px;
+  font-weight: 700;
+}
+.stops {
+  position: relative;
+  margin: 12px 0 0 8px;
+  padding-left: 26px;
+  border-left: 3px solid var(--line-track);
+  list-style: none;
+}
+.stops li {
+  position: relative;
+  margin: 0 0 14px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.stops li::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 18px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 3px solid var(--line-track);
+}
+.stops li:last-child::before {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.stops li strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.faq-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 17px;
+  margin: 10px 0;
+}
+.faq-card h3 {
+  font-size: 16.5px;
+  line-height: 1.3;
+  margin: 0 0 6px;
+  font-weight: 650;
+}
+.faq-card p {
+  margin: 0;
+  color: var(--ink);
+}
+table.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fact-table th, .fact-table td {
+  text-align: left;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 15px;
+  vertical-align: top;
+}
+.fact-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  background: var(--inset);
+}
+.fact-table tr:last-child td { border-bottom: none; }
+.locale-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.locale-grid li {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.privacy-block {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 15px 17px;
+  margin: 10px 0;
+}
+.privacy-block h2 {
+  margin: 0 0 6px;
+  font-size: 17.5px;
+}
+.privacy-block p {
+  margin: 0;
+}
+footer {
+  margin-top: 46px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  h1 { font-size: 28px; }
+  main { padding: 26px 16px 54px; }
+  .hero img { width: 56px; height: 56px; }
+}
+</style>
+</head>
+<body>
+<div class="route-header" aria-hidden="true"></div>
+<main>
+  <div class="hero">
+    <img src="../assets/icon.png" alt="Подписки">
+    <div>
+      <div class="eyebrow">Подписки · Трекер Списаний</div>
+      <h1>Политика конфиденциальности</h1>
+    </div>
+  </div>
+  <p class="lede">Ваш список хранится только на вашем iPhone. Без аккаунтов, аналитики и серверов.</p>
+  <nav class="primary-nav">
+    <a href="help.html">Справка</a>
+    <a href="privacy.html">Конфиденциальность</a>
+    <a href="../index.html">Все языки</a>
+  </nav>
+  <div class="lang-strip"><a class="lang-chip" href="../en-US/privacy.html">English</a><a class="lang-chip" href="../tr/privacy.html">Türkçe</a><a class="lang-chip" href="../de-DE/privacy.html">Deutsch</a><a class="lang-chip" href="../es-ES/privacy.html">Español</a><a class="lang-chip" href="../fr-FR/privacy.html">Français</a><a class="lang-chip" href="../it/privacy.html">Italiano</a><a class="lang-chip" href="../nl-NL/privacy.html">Nederlands</a><a class="lang-chip" href="../pt-BR/privacy.html">Português (Brasil)</a><a class="lang-chip current" href="../ru/privacy.html">Русский</a><a class="lang-chip" href="../ja/privacy.html">日本語</a><a class="lang-chip" href="../ko/privacy.html">한국어</a><a class="lang-chip" href="../zh-Hans/privacy.html">简体中文</a></div>
+  <h2>Кратко</h2>
+  <table class="fact-table"><tbody><tr><td><strong>Собираемые данные</strong></td><td>Нет</td></tr><tr><td><strong>Регистрация</strong></td><td>Не требуется</td></tr><tr><td><strong>Доступ к банкам или почте</strong></td><td>Отсутствует</td></tr><tr><td><strong>Реклама и трекеры</strong></td><td>Отсутствуют</td></tr><tr><td><strong>Хранение</strong></td><td>Локально на устройстве и в локальном контейнере виджета</td></tr><tr><td><strong>Удаление данных</strong></td><td>Настройки &gt; Удалить все подписки</td></tr></tbody></table>
+  <div class="privacy-block"><h2>Локальное хранение</h2><p>Данные хранятся в одном файле на вашем iPhone и локально доступны виджетам без отправки в сеть.</p></div><div class="privacy-block"><h2>Уведомления и Siri</h2><p>Напоминания планируются и команды Siri выполняются локально на устройстве.</p></div><div class="privacy-block"><h2>Встроенные покупки</h2><p>Подписки Pro оформляется как разовая покупка через Apple StoreKit 2.</p></div><div class="privacy-block"><h2>Резервные копии и CSV</h2><p>Экспортированные файлы покидают устройство только по вашему выбору.</p></div><div class="privacy-block"><h2>Контакты</h2><p>По всем вопросам пишите на указанный адрес электронной почты.</p></div>
+  <h2>Поддержка и контакты</h2>
+  <p>Вопросы по приложению Подписки: <a href="mailto:hayriodabas@gmail.com">hayriodabas@gmail.com</a>.</p>
+  <footer>Обновлено 2026-11-25 · Subscriptions (app.klarwerk.subscriptions) · Hayri Odabaş</footer>
+</main>
+</body>
+</html>

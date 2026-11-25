@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>订阅管理 — 使用帮助与指南</title>
+<link rel="canonical" href="https://hayriodabas.github.io/subscriptions-help/zh-Hans/help.html">
+<style>:root {
+  color-scheme: light dark;
+  --paper: #f3f2ee;
+  --card: #ffffff;
+  --inset: #e8e6e0;
+  --rule: #d5d2c9;
+  --ink: #17191d;
+  --ink-muted: #5a5e66;
+  --line-track: #24262b;
+  --accent: #e8562a;
+  --accent-link: #b93a14;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141518;
+    --card: #1d1f24;
+    --inset: #25282f;
+    --rule: #343740;
+    --ink: #f3f2ee;
+    --ink-muted: #a1a5ae;
+    --line-track: #f3f2ee;
+    --accent: #e8562a;
+    --accent-link: #ff7a52;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16.5px/1.64 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.route-header {
+  height: 12px;
+  background: linear-gradient(90deg, var(--line-track) 0 72%, var(--accent) 72% 100%);
+}
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 36px 20px 72px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.hero img {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  border: 1px solid var(--rule);
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent-link);
+}
+h1 {
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 750;
+  margin: 4px 0 4px;
+  letter-spacing: -0.02em;
+}
+.lede {
+  font-size: 17.5px;
+  color: var(--ink-muted);
+  margin: 0 0 22px;
+}
+nav.primary-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 16px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+.lang-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 28px;
+}
+.lang-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+  background: var(--card);
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.lang-chip.current {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+a {
+  color: var(--accent-link);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+h2 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 34px 0 12px;
+  font-weight: 700;
+}
+.stops {
+  position: relative;
+  margin: 12px 0 0 8px;
+  padding-left: 26px;
+  border-left: 3px solid var(--line-track);
+  list-style: none;
+}
+.stops li {
+  position: relative;
+  margin: 0 0 14px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.stops li::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 18px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 3px solid var(--line-track);
+}
+.stops li:last-child::before {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.stops li strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.faq-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 14px 17px;
+  margin: 10px 0;
+}
+.faq-card h3 {
+  font-size: 16.5px;
+  line-height: 1.3;
+  margin: 0 0 6px;
+  font-weight: 650;
+}
+.faq-card p {
+  margin: 0;
+  color: var(--ink);
+}
+table.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fact-table th, .fact-table td {
+  text-align: left;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 15px;
+  vertical-align: top;
+}
+.fact-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  background: var(--inset);
+}
+.fact-table tr:last-child td { border-bottom: none; }
+.locale-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.locale-grid li {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.privacy-block {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 15px 17px;
+  margin: 10px 0;
+}
+.privacy-block h2 {
+  margin: 0 0 6px;
+  font-size: 17.5px;
+}
+.privacy-block p {
+  margin: 0;
+}
+footer {
+  margin-top: 46px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  h1 { font-size: 28px; }
+  main { padding: 26px 16px 54px; }
+  .hero img { width: 56px; height: 56px; }
+}
+</style>
+</head>
+<body>
+<div class="route-header" aria-hidden="true"></div>
+<main>
+  <div class="hero">
+    <img src="../assets/icon.png" alt="订阅管理">
+    <div>
+      <div class="eyebrow">订阅管理 · 续费与发薪日提醒</div>
+      <h1>使用帮助与指南</h1>
+    </div>
+  </div>
+  <p class="lede">发薪日前会扣走多少钱：按日期顺序列出每笔即将到来的续费。</p>
+  <nav class="primary-nav">
+    <a href="help.html">帮助</a>
+    <a href="privacy.html">隐私政策</a>
+    <a href="../index.html">所有语言</a>
+  </nav>
+  <div class="lang-strip"><a class="lang-chip" href="../en-US/help.html">English</a><a class="lang-chip" href="../tr/help.html">Türkçe</a><a class="lang-chip" href="../de-DE/help.html">Deutsch</a><a class="lang-chip" href="../es-ES/help.html">Español</a><a class="lang-chip" href="../fr-FR/help.html">Français</a><a class="lang-chip" href="../it/help.html">Italiano</a><a class="lang-chip" href="../nl-NL/help.html">Nederlands</a><a class="lang-chip" href="../pt-BR/help.html">Português (Brasil)</a><a class="lang-chip" href="../ru/help.html">Русский</a><a class="lang-chip" href="../ja/help.html">日本語</a><a class="lang-chip" href="../ko/help.html">한국어</a><a class="lang-chip current" href="../zh-Hans/help.html">简体中文</a></div>
+  <h2>使用步骤</h2>
+  <ol class="stops"><li><strong>添加订阅项目</strong>轻点 +，填写名称、金额、币种、周期、首次扣费日期、分类、银行卡以及分摊人数；如有免费试用可开启并设置结束日。</li><li><strong>查看时间线与发薪日区间</strong>时间线标签按日期排列所有扣费并显示累计总额。在设置中设置发薪日后，时间线会按发薪周期分段统计。</li><li><strong>未来调价与单次扣费调整</strong>记录即将生效的新价格及起始日，不影响之前记录；也可以针对某一次扣费选择跳过或填写单次金额。</li><li><strong>暂停、体检与取消节省</strong>暂停期间不计入总额也不发提醒；在服务商处取消订阅后再标记为已取消，即可在年度标签统计节省金额。</li></ol>
+  <h2>常见问题</h2>
+  <div class="faq-card"><h3>应用会自动帮我退订吗？</h3><p>不会。请先前往服务商或 Apple 订阅设置取消，再在应用中标记为已取消。</p></div><div class="faq-card"><h3>会读取银行账单或电子邮件吗？</h3><p>不会。本应用不连接银行也不读取邮件，仅记录你手动输入的内容。</p></div><div class="faq-card"><h3>支持多种货币吗？</h3><p>支持。不同货币会分别汇总统计，不会联网自动换算汇率。</p></div><div class="faq-card"><h3>免费版与 Pro 有何区别？</h3><p>免费支持最多 5 项订阅、时间线、发薪日统计、调价预告、桌面/锁屏小组件、体检、备份文件和 Siri 问答。订阅管理 Pro 为一次性买断，解锁无限订阅、本地通知提醒、年度图表与 CSV 导出。</p></div><div class="faq-card"><h3>备份恢复与退款</h3><p>可在设置中保存备份或从备份恢复，换机后点击恢复购买即可恢复 Pro；退款请通过 Apple 的 reportaproblem.apple.com 申请。</p></div>
+  <h2>支持与联系</h2>
+  <p>如有问题或建议，请联系：<a href="mailto:hayriodabas@gmail.com">hayriodabas@gmail.com</a></p>
+  <footer>更新日期 2026-11-25 · Subscriptions (app.klarwerk.subscriptions) · Hayri Odabaş</footer>
+</main>
+</body>
+</html>
